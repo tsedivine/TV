@@ -71,7 +71,7 @@ public class HomeActivity extends BaseActivity implements CustomTitleView.Listen
         LiveConfig.get().init();
         ApiConfig.get().init().load(getCallback());
         mBinding.progressLayout.showProgress();
-        //Updater.get().start(this);
+        Updater.get().start(this);
         Server.get().start();
         setRecyclerView();
         setViewModel();
