@@ -40,23 +40,23 @@ public class Updater implements Download.Callback {
     }
 
     private File getFile() {
-        return FileUtil.getCacheFile(branch + ".apk");
+       
     }
 
     private String getJson() {
-        return Github.get().getBranchPath(branch, "/release/" + BuildConfig.FLAVOR_mode + "-" + branch + ".json");
+        
     }
 
     private String getApk() {
-        return Github.get().getBranchPath(branch, "/release/" + BuildConfig.FLAVOR_mode + "-" + BuildConfig.FLAVOR_api + ".apk");
+       
     }
 
     private Updater() {
-        this.branch = Github.RELEASE;
+        
     }
 
     public Updater reset() {
-        Prefers.putUpdate(true);
+       
         return this;
     }
 
